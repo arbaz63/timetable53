@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        base_url = 'http://127.0.0.1:8000/scheduler_api'
+        fetch(`${base_url}/department_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+    
+        fetch(`${base_url}/teacher_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+    
+        fetch(`${base_url}/course_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+
+        fetch(`${base_url}/section_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+
+        fetch(`${base_url}/room_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+
+        fetch(`${base_url}/timeslot_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+
+        fetch(`${base_url}/class_list`)
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+    </script>
+</body>
+</html>
